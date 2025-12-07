@@ -82,12 +82,21 @@ cd test-magang-kumparan
 2. Install depedencies
 ```bash
 npm install
+```
 3. Jalankan mode development
 ```bash
 npm run dev
+```
 4. Jalankan mode build
 ```bash
 npm run build
+```
 5. jalankan mode preview
 ```bash
 npm run preview
+```
+
+# Screenshot/Demo
+<img width="1402" height="822" alt="image" src="https://github.com/user-attachments/assets/61ff841e-bb71-4a1a-bdbe-e82778fbf05f" />
+<img width="1404" height="742" alt="image" src="https://github.com/user-attachments/assets/b36749a5-056d-4603-8c7d-59b034bab66a" />
+<img width="1426" height="735" alt="image" src="https://github.com/user-attachments/assets/a2a66dff-d0a8-44a7-916e-c8de81c40d18" />
