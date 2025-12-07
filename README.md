@@ -23,15 +23,15 @@ UI pada aplikasi ini dibangun dengan clean, dan responsive.
 
 # Folder Struktur
 src/
-├── api/ # API client + endpoint
-├── components/ # Reusable UI components
-├── graphql/ # GraphQL query strings
-├── hooks/ # Custom data fetching hooks
-├── pages/ # Route pages (Posts, Detail, Create)
-├── routes/ # App routing
-├── store/ # Zustand global store
-├── types/ # TypeScript types
-└── validations/ # Zod schemas
+  api/ # API client + endpoint
+  components/ # Reusable UI components
+  graphql/ # GraphQL query strings
+  hooks/ # Custom data fetching hooks
+  pages/ # Route pages (Posts, Detail, Create)
+  routes/ # App routing
+  store/ # Zustand global store
+  types/ # TypeScript types
+  validations/ # Zod schemas
 
 # Fitur yang Diimplementasikan
 ### 1. **Halaman Daftar Posting**
@@ -45,7 +45,6 @@ src/
   - Indikator halaman  
 - Skeleton loading saat memuat data  
 
----
 
 ### 2. **Halaman Detail Posting**
 - Menampilkan judul dan isi posting secara lengkap  
@@ -53,7 +52,6 @@ src/
 - Menampilkan daftar komentar  
 - Tombol kembali ke halaman daftar posting  
 
----
 
 ### 3. **Membuat Postingan Baru**
 - Input form:
@@ -67,7 +65,7 @@ src/
   - Menampilkan pesan sukses
   - Reset form  
 
----
+
 
 ### 4. **Hapus Postingan**
 - Tombol delete pada setiap posting  
