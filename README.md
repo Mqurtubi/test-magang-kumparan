@@ -74,6 +74,8 @@ src/
 - UI langsung ter-update  
 
 # Cara menjalankan
+1. Clone repository
+```bash
 git clone https://github.com/Mqurtubi/test-magang-kumparan.git
 cd test-magang-kumparan
 
