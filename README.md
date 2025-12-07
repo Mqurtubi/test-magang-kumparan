@@ -79,3 +79,15 @@ src/
 git clone https://github.com/Mqurtubi/test-magang-kumparan.git
 cd test-magang-kumparan
 
+2. Install depedencies
+```bash
+npm install
+3. Jalankan mode development
+```bash
+npm run dev
+4. Jalankan mode build
+```bash
+npm run build
+5. jalankan mode preview
+```bash
+npm run preview
