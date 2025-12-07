@@ -10,7 +10,7 @@ Project ini untuk tugas **Frontend Engineer Intern Skill Test**. Project ini meg
 UI pada aplikasi ini dibangun dengan clean, dan responsive.
 
 # Live Demo:  
-ttps://posts-kumparan.vercel.app/
+https://posts-kumparan.vercel.app/
 
 #Tech Stack
 
