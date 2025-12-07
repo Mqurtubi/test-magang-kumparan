@@ -78,7 +78,7 @@ src/
 ```bash
 git clone https://github.com/Mqurtubi/test-magang-kumparan.git
 cd test-magang-kumparan
-
+```
 2. Install depedencies
 ```bash
 npm install
