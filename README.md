@@ -23,15 +23,15 @@ UI pada aplikasi ini dibangun dengan clean, dan responsive.
 
 # Folder Struktur
 src/
-  api/ # API client + endpoint
-  components/ # Reusable UI components
-  graphql/ # GraphQL query strings
-  hooks/ # Custom data fetching hooks
-  pages/ # Route pages (Posts, Detail, Create)
-  routes/ # App routing
-  store/ # Zustand global store
-  types/ # TypeScript types
-  validations/ # Zod schemas
+- api/ # API client + endpoint
+- components/ # Reusable UI components
+- graphql/ # GraphQL query strings
+- hooks/ # Custom data fetching hooks
+- pages/ # Route pages (Posts, Detail, Create)
+- routes/ # App routing
+- store/ # Zustand global store
+- types/ # TypeScript types
+- validations/ # Zod schemas
 
 # Fitur yang Diimplementasikan
 ### 1. **Halaman Daftar Posting**
