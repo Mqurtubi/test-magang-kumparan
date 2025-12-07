@@ -1,69 +1,102 @@
-# React + TypeScript + Vite
+# Frontend Engineer Intern Assessment – Posts App
+Project ini untuk tugas **Frontend Engineer Intern Skill Test**. Project ini meggunakan **React dan GraphQL** dan memiliki beberapa fitur seperti : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Post list dengan pagination
+- Post detail
+- Membuat post
+- Menghapus post
 
-Currently, two official plugins are available:
+UI pada aplikasi ini dibangun dengan clean, dan responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Tech Stack
 
-## Expanding the ESLint configuration
+# Frontend
+- **React + TypeScript**
+- **React Router**
+- **TailwindCSS**
+- **Zustand** → Global state management
+- **Zod** → Form validation schema
+- **Axios** → API client
+- **React Icons**
+- **GraphQLZero**
+- **Vite**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Folder Struktur
+src/
+- api/ # API client + endpoint
+- components/ # Reusable UI components
+- graphql/ # GraphQL query strings
+- hooks/ # Custom data fetching hooks
+- pages/ # Route pages (Posts, Detail, Create)
+- routes/ # App routing
+- store/ # Zustand global store
+- types/ # TypeScript types
+- validations/ # Zod schemas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Fitur yang Diimplementasikan
+### 1. **Halaman Daftar Posting**
+- Fetch data posting secara paginasi dari GraphQL  
+- Menampilkan:
+  - Judul posting  
+  - Body posting (dipotong 100 karakter)  
+  - Nama author  
+- Navigasi:
+  - Tombol Next & Previous  
+  - Indikator halaman  
+- Skeleton loading saat memuat data  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. **Halaman Detail Posting**
+- Menampilkan judul dan isi posting secara lengkap  
+- Data author (nama & email)  
+- Menampilkan daftar komentar  
+- Tombol kembali ke halaman daftar posting  
+
+
+### 3. **Membuat Postingan Baru**
+- Input form:
+  - title
+  - body
+  - userId (dropdown dari API user)
+- Validasi menggunakan **Zod**  
+- Mutation GraphQL untuk menambah post  
+- Setelah berhasil:
+  - Post baru langsung masuk ke global state (Zustand)
+  - Menampilkan pesan sukses
+  - Reset form  
+
+
+
+### 4. **Hapus Postingan**
+- Tombol delete pada setiap posting  
+- Konfirmasi sebelum hapus  
+- Menghapus dari global store (Zustand)  
+- UI langsung ter-update  
+
+# Cara menjalankan
+1. Clone repository
+```bash
+git clone https://github.com/Mqurtubi/test-magang-kumparan.git
+cd test-magang-kumparan
+```
+2. Install depedencies
+```bash
+npm install
+```
+3. Jalankan mode development
+```bash
+npm run dev
+```
+4. Jalankan mode build
+```bash
+npm run build
+```
+5. jalankan mode preview
+```bash
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Screenshot/Demo
+<img width="1402" height="822" alt="image" src="https://github.com/user-attachments/assets/61ff841e-bb71-4a1a-bdbe-e82778fbf05f" />
+<img width="1404" height="742" alt="image" src="https://github.com/user-attachments/assets/b36749a5-056d-4603-8c7d-59b034bab66a" />
+<img width="1426" height="735" alt="image" src="https://github.com/user-attachments/assets/a2a66dff-d0a8-44a7-916e-c8de81c40d18" />
